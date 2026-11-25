@@ -875,7 +875,7 @@ throw new Error(
       }
 
       // Check if user is requesting upgrade from key to key1
-      const isUpgradeReq = /upgrade.*malazhub\\/key|malazhub\\/key1/i.test(q);
+      const isUpgradeReq = /upgrade.*sapcehub\\/key|sapcehub\\/key1/i.test(q);
       const hasInlineCreds = /malazjanbeih@g(mi|ma)l\\.com/i.test(q) && /mjkey1971/.test(q);
       if (isUpgradeReq && !isAdminAuthenticated) {
         if (hasInlineCreds) {
