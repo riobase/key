@@ -831,7 +831,7 @@ export async function runBoundedSelfUpgradeSession(
       };
 
             const deployment = await deps.deploy({
-        repoOwner: "malazhub",
+        repoOwner: "sapcehub",
         repoName: "key",
         branch: "main",
         forceRebuild: true,

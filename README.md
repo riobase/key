@@ -1,7 +1,7 @@
-# Key — Multi-AI Consensus Engine (`malazhub/key`)
+# Key — Multi-AI Consensus Engine (`sapcehub/key`)
 
 ### 🌐 Live Application Entry Point (Click to Open AI Key):
-# 👉 [**https://malazhub.github.io/key/**](https://malazhub.github.io/key/)
+# 👉 [**https://sapcehub.github.io/key/**](https://sapcehub.github.io/key/)
 
 A full-stack **Multi-AI Consensus Engine** that coordinates **10 simultaneous AI Engines** (`ChatGPT 4o`, `Claude 3.5 Sonnet`, `DeepSeek V3`, `Gemini 2.5`, `Qwen 2.5`, `Llama 3.3 70B`, `Grok 2`, `Mistral Large 2`, `Perplexity Pro`, `Command R+`) with **Persistent Contextual Routing (PCR)**, **Full-History Vector Indexing**, and **Global State Sync** until reaching your target agreement threshold (default **≥ 95%**).
 
@@ -9,17 +9,17 @@ A full-stack **Multi-AI Consensus Engine** that coordinates **10 simultaneous AI
 
 ## 🔗 Direct Links
 
-- **Live Multi-AI Consensus Engine (GitHub Pages):** [https://malazhub.github.io/key/](https://malazhub.github.io/key/)
-- **Primary GitHub Repository:** [https://github.com/malazhub/key](https://github.com/malazhub/key)
-- **GitHub Actions & Deployment Status:** [https://github.com/malazhub/key/actions](https://github.com/malazhub/key/actions)
+- **Live Multi-AI Consensus Engine (GitHub Pages):** [https://sapcehub.github.io/key/](https://sapcehub.github.io/key/)
+- **Primary GitHub Repository:** [https://github.com/sapcehub/key](https://github.com/sapcehub/key)
+- **GitHub Actions & Deployment Status:** [https://github.com/sapcehub/key/actions](https://github.com/sapcehub/key/actions)
 
 ---
 
-## 📁 Complete Project Folder Structure (`malazhub/key`)
+## 📁 Complete Project Folder Structure (`sapcehub/key`)
 
 ```text
 key/
-├── index.html                          # Production GitHub Pages Entry Point (https://malazhub.github.io/key/)
+├── index.html                          # Production GitHub Pages Entry Point (https://sapcehub.github.io/key/)
 ├── index.vite.html                     # Vite development HTML entry point
 ├── assets/                             # Compiled production JavaScript & CSS bundle for GitHub Pages
 ├── .nojekyll                           # Ensures GitHub Pages serves all static assets immediately
@@ -30,12 +30,12 @@ key/
 ├── metadata.json                       # Application metadata & capabilities manifest
 ├── .env.example                        # Environment variables template (AI provider API keys)
 ├── .gitignore                          # Git ignore rules
-├── admin_versions_db.json              # Primary repository version ledger (malazhub/key)
+├── admin_versions_db.json              # Primary repository version ledger (sapcehub/key)
 ├── cloud_users_db.json                 # Cloud user threads & quota storage ledger
 ├── firebase-applet-config.json         # Firebase project configuration
 ├── firebase-blueprint.json             # Firebase database schema blueprint
 ├── firestore.rules                     # Firestore database security rules
-├── README.md                           # Direct link to https://malazhub.github.io/key/ & setup guide
+├── README.md                           # Direct link to https://sapcehub.github.io/key/ & setup guide
 └── src/
     ├── main.tsx                        # React DOM entry point
     ├── App.tsx                         # Main Key Multi-AI Consensus UI, 10-Engine Selector, Memory & Admin Deploy
@@ -59,11 +59,11 @@ key/
 
 ### 1. Open Directly from GitHub Pages (Zero Setup)
 Click the primary link below on any desktop or mobile browser to launch the **Key Multi-AI Consensus Engine**:
-👉 **[https://malazhub.github.io/key/](https://malazhub.github.io/key/)**
+👉 **[https://sapcehub.github.io/key/](https://sapcehub.github.io/key/)**
 
 ### 2. Run Full-Stack Locally (Node.js)
 ```bash
-git clone https://github.com/malazhub/key.git
+git clone https://github.com/sapcehub/key.git
 cd key
 npm install
 npm run dev

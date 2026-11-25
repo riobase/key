@@ -143,15 +143,15 @@ export function buildClientKey1ZeroDivergenceHtml(): string {
       ? window.location.origin
       : "https://ais-dev-f2uayjdkh47dvk4xbjqlp7-790065884957.europe-west2.run.app";
 
-  const liveKeyPagesUrl = "https://malazhub.github.io/key/";
-  const githubRepoUrl = "https://github.com/malazhub/key";
+  const liveKeyPagesUrl = "https://sapcehub.github.io/key/";
+  const githubRepoUrl = "https://github.com/sapcehub/key";
 
   return `<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Key — Direct GitHub Force-Deploy &amp; Live AI Key Portal (malazhub/key)</title>
+  <title>Key — Direct GitHub Force-Deploy &amp; Live AI Key Portal (sapcehub/key)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { background-color: #020617; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; margin: 0; }
@@ -184,7 +184,7 @@ export function buildClientKey1ZeroDivergenceHtml(): string {
         📂 ${githubRepoUrl}
       </a>
       <div id="clientDeployStatus" class="text-slate-300 text-xs font-mono flex items-center gap-2 flex-wrap">
-        Target: <strong class="text-emerald-300">malazhub/key (main)</strong> → <strong class="text-sky-300">${liveKeyPagesUrl}</strong>
+        Target: <strong class="text-emerald-300">sapcehub/key (main)</strong> → <strong class="text-sky-300">${liveKeyPagesUrl}</strong>
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@ export function buildClientKey1ZeroDivergenceHtml(): string {
           var pr = await fetch('${originUrl}/api/admin/github-device-poll', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ device_code: deviceCode, repoOwner: 'malazhub', repoName: 'key', branch: 'main' })
+            body: JSON.stringify({ device_code: deviceCode, repoOwner: 'sapcehub', repoName: 'key', branch: 'main' })
           });
           if (!pr.ok) return;
           var pd = await pr.json();
@@ -235,13 +235,13 @@ export function buildClientKey1ZeroDivergenceHtml(): string {
 
     async function runDirectDeploy() {
       var st = document.getElementById('clientDeployStatus');
-      st.innerHTML = '⏳ Executing clean-slate Git force-commit &amp; deploy to <strong>malazhub/key</strong>...';
+      st.innerHTML = '⏳ Executing clean-slate Git force-commit &amp; deploy to <strong>sapcehub/key</strong>...';
       try {
         var savedToken = findSavedBrowserToken();
         var r = await fetch('${originUrl}/api/admin/deploy', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ githubToken: savedToken || undefined, repoOwner: 'malazhub', repoName: 'key', branch: 'main' })
+          body: JSON.stringify({ githubToken: savedToken || undefined, repoOwner: 'sapcehub', repoName: 'key', branch: 'main' })
         });
         var d = await r.json();
         if (d.success) {

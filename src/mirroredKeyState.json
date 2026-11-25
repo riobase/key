@@ -65,9 +65,9 @@
     }
   ],
   "adminDeployResult": {
-    "repoUrl": "https://github.com/malazhub/key",
-    "actionsUrl": "https://github.com/malazhub/key/actions",
-    "liveDeployUrl": "https://malazhub.github.io/key/",
+    "repoUrl": "https://github.com/sapcehub/key",
+    "actionsUrl": "https://github.com/sapcehub/key/actions",
+    "liveDeployUrl": "https://sapcehub.github.io/key/",
     "pushedCount": 33,
     "commitSha": "da4127b",
     "deployedAt": "2026-10-02T12:22:42.372Z",

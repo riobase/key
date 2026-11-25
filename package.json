@@ -2,10 +2,10 @@
   "name": "key",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://malazhub.github.io/key/",
+  "homepage": "https://sapcehub.github.io/key/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/malazhub/key.git"
+    "url": "https://github.com/sapcehub/key.git"
   },
   "type": "module",
   

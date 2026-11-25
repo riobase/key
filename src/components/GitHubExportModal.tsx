@@ -39,7 +39,7 @@ interface GitHubExportModalProps {
 /**
  * Generates a 100% standalone, self-contained index.html application that has the EXACT SAME VIEW,
  * LAYOUT, AND LIVE SEARCH & ANSWER LOGIC as https://ais-dev-f2uayjdkh47dvk4xbjqlp7-790065884957.europe-west2.run.app/
- * when opened from GitHub Pages (https://malazhub.github.io/key/) or locally.
+ * when opened from GitHub Pages (https://sapcehub.github.io/key/) or locally.
  */
 function buildStandaloneGitHubPagesHtml(): string {
   return `<!DOCTYPE html>
@@ -47,7 +47,7 @@ function buildStandaloneGitHubPagesHtml(): string {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Key — Multi-AI Consensus Engine (https://malazhub.github.io/key/)</title>
+  <title>Key — Multi-AI Consensus Engine (https://sapcehub.github.io/key/)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { background-color: #020617; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; }
@@ -70,8 +70,8 @@ function buildStandaloneGitHubPagesHtml(): string {
       </a>
     </div>
     <div class="flex items-center gap-2">
-      <a href="https://github.com/malazhub/key" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-xs font-semibold text-slate-200">
-        malazhub/key
+      <a href="https://github.com/sapcehub/key" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-xs font-semibold text-slate-200">
+        sapcehub/key
       </a>
       <button id="newChatBtn" type="button" class="px-3 py-1.5 text-xs font-semibold text-slate-200 bg-slate-900 border border-slate-700/80 rounded-lg hover:bg-slate-800 cursor-pointer">
         + New Chat
@@ -104,7 +104,7 @@ function buildStandaloneGitHubPagesHtml(): string {
           </div>
         </section>
 
-        <!-- Admin Upgrade Section (malazhub/key -> malazhub/key1 locked by malazjanbeih@gmail.com + mjkey1971) -->
+        <!-- Admin Upgrade Section (sapcehub/key -> sapcehub/key1 locked by malazjanbeih@gmail.com + mjkey1971) -->
         <section class="space-y-3 pt-2 border-t border-slate-800/80">
           <div class="bg-slate-950/90 rounded-xl border border-slate-800 p-3.5 space-y-2.5">
             <button id="sidebarAdminBtn" type="button" class="w-full py-2.5 px-3 bg-slate-900 hover:bg-slate-800 text-amber-300 font-semibold text-xs rounded-lg border border-slate-700/80 flex items-center justify-center gap-2 cursor-pointer">
@@ -112,7 +112,7 @@ function buildStandaloneGitHubPagesHtml(): string {
             </button>
             <div id="adminStatusBox" class="hidden p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/40 text-[11px] text-amber-200 space-y-1">
               <div class="font-bold text-amber-300">✓ Admin Verified: malazjanbeih@gmail.com</div>
-              <div>Upgrade Target: <span class="font-mono text-emerald-300">https://github.com/malazhub/key1</span></div>
+              <div>Upgrade Target: <span class="font-mono text-emerald-300">https://github.com/sapcehub/key1</span></div>
             </div>
           </div>
         </section>
@@ -211,7 +211,7 @@ function buildStandaloneGitHubPagesHtml(): string {
         <h3 class="text-sm font-bold text-white">🔒 Admin Access Verification (key → key1)</h3>
         <button id="closeAdminModalBtn" type="button" class="text-slate-400 hover:text-white cursor-pointer">✕</button>
       </div>
-      <p class="text-xs text-slate-300">No one can upgrade <code class="text-emerald-300">https://github.com/malazhub/key</code> to <code class="text-amber-300">https://github.com/malazhub/key1</code> unless you input username <code class="text-white">malazjanbeih@gmail.com</code> and password <code class="text-white">mjkey1971</code>.</p>
+      <p class="text-xs text-slate-300">Repository upgrade actions are restricted to authorized administrators.</p>
       <form id="adminLoginForm" class="space-y-3">
         <div>
           <label class="text-xs font-medium text-slate-300 block mb-1">Admin Username / Email</label>
@@ -612,7 +612,7 @@ function buildStandaloneGitHubPagesHtml(): string {
         activateAdminMode();
       } else {
         closeAdminModal();
-        showBanner('Upgrade denied: Only username "malazjanbeih@gmail.com" and password "mjkey1971" can upgrade https://github.com/malazhub/key to https://github.com/malazhub/key1.');
+        showBanner('Upgrade denied: Only username "malazjanbeih@gmail.com" and password "mjkey1971" can upgrade https://github.com/sapcehub/key to https://github.com/sapcehub/key1.');
       }
     });
 
@@ -882,7 +882,7 @@ throw new Error(
           activateAdminMode();
         } else {
           openAdminModal();
-          showBanner('Upgrade locked: No one can upgrade "https://github.com/malazhub/key" to "https://github.com/malazhub/key1" unless you input username "malazjanbeih@gmail.com" and password "mjkey1971".');
+          showBanner('Upgrade locked: No one can upgrade "https://github.com/sapcehub/key" to "https://github.com/sapcehub/key1" unless you input username "malazjanbeih@gmail.com" and password "mjkey1971".');
           return;
         }
       }
@@ -1154,7 +1154,7 @@ export const GitHubExportModal: React.FC<GitHubExportModalProps> = ({
   const [loading, setLoading] = useState<boolean>(false);
   const [copiedPath, setCopiedPath] = useState<string | null>(null);
 
-    const [repoOwner, setRepoOwner] = useState<string>("malazhub");
+    const [repoOwner, setRepoOwner] = useState<string>("sapcehub");
   const [repoName, setRepoName] = useState<string>("key");
 
   const [pushing, setPushing] = useState<boolean>(false);
@@ -1237,7 +1237,7 @@ export const GitHubExportModal: React.FC<GitHubExportModalProps> = ({
           const mirroredState: Record<string, unknown> = {
             deploymentRequestedAt: new Date().toISOString(),
             deploymentSource: "Key Browser Approved Working Copy",
-            deploymentTarget: "malazhub/key",
+            deploymentTarget: "sapcehub/key",
             deploymentBranch: "main",
             administrativeDeploy: true,
             defenderBypass: true,
@@ -1263,7 +1263,7 @@ const deployRes = await fetch(`${backend}/api/admin/deploy`, {
         "Cache-Control": "no-cache",
     },
     body: JSON.stringify({
-        repoOwner: "malazhub",
+        repoOwner: "sapcehub",
         repoName: "key",
         branch: "main",
         workingCopyId: approvedWorkingCopy.workingCopyId,
@@ -1287,7 +1287,7 @@ const deployRes = await fetch(`${backend}/api/admin/deploy`, {
         message: `Verified deployment completed. Remote commit ${
         data.commitSha || data.remoteCommitSha || "verified"
         } is confirmed on main.`,
-        repoUrl: data.repoUrl || "https://github.com/malazhub/key",
+        repoUrl: data.repoUrl || "https://github.com/sapcehub/key",
     });
     return;
     }
@@ -1444,7 +1444,7 @@ const deployRes = await fetch(`${backend}/api/admin/deploy`, {
               <h2 className="text-sm sm:text-base font-bold text-white">
                 Automated 1-Click Full Structure Deploy to{" "}
                 <code className="text-emerald-300">
-                  https://github.com/malazhub/key
+                  https://github.com/sapcehub/key
                 </code>
               </h2>
               <p className="text-[11px] text-slate-400">

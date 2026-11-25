@@ -5,10 +5,10 @@
     {
       "versionNumber": 0,
       "versionTag": "key",
-      "repoUrl": "https://github.com/malazhub/key",
-      "liveDeployUrl": "https://malazhub.github.io/key/",
-      "taskDescription": "Direct GitHub Force-Deploy of Key (Multi-AI Consensus Engine) to https://github.com/malazhub/key with live entry point https://malazhub.github.io/key/",
-      "summary": "Primary Multi-AI Consensus Engine repository at https://github.com/malazhub/key and live entry point https://malazhub.github.io/key/.",
+      "repoUrl": "https://github.com/sapcehub/key",
+      "liveDeployUrl": "https://sapcehub.github.io/key/",
+      "taskDescription": "Direct GitHub Force-Deploy of Key (Multi-AI Consensus Engine) to https://github.com/sapcehub/key with live entry point https://sapcehub.github.io/key/",
+      "summary": "Primary Multi-AI Consensus Engine repository at https://github.com/sapcehub/key and live entry point https://sapcehub.github.io/key/.",
       "previewHtml": "",
       "createdAt": "2026-03-29T00:00:00.000Z",
       "status": "base"
